@@ -1,0 +1,15 @@
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\bin\Debug\net8.0\lab-7-maze-elorasmith.exe
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\bin\Debug\net8.0\lab-7-maze-elorasmith.deps.json
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\bin\Debug\net8.0\lab-7-maze-elorasmith.runtimeconfig.json
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\bin\Debug\net8.0\lab-7-maze-elorasmith.dll
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\bin\Debug\net8.0\lab-7-maze-elorasmith.pdb
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\lab-7-maze-elorasmith.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\lab-7-maze-elorasmith.AssemblyInfoInputs.cache
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\lab-7-maze-elorasmith.AssemblyInfo.cs
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\lab-7-maze-elorasmith.csproj.CoreCompileInputs.cache
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\lab-7-maze-elorasmith.sourcelink.json
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\lab-7-maze-elorasmith.dll
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\refint\lab-7-maze-elorasmith.dll
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\lab-7-maze-elorasmith.pdb
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\lab-7-maze-elorasmith.genruntimeconfig.cache
+C:\Users\14358\OneDrive\Desktop\code\my-code-dir\lab-7-maze-elorasmith\obj\Debug\net8.0\ref\lab-7-maze-elorasmith.dll
