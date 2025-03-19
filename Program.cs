@@ -1,7 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 // Elora Smith, 3/18/25, Lab 7 Maze
+using System.Data;
 
+Console.Clear();
 Console.WriteLine("Welcome to the MAZE! Use the arrows to navigate to the star at the end. Press enter to start.");
 if (Console.ReadKey(true).Key == ConsoleKey.Enter)
 {
@@ -14,9 +16,12 @@ if (Console.ReadKey(true).Key == ConsoleKey.Enter)
 ConsoleKey key;
 int x = 0;
 int y = 0;
+//int cursorLeft = 0;
+//int cursorTop = 0;
+Console.SetCursorPosition(0,0);
 do
 {
-    Console.SetCursorPosition(x, y);
+    
     key = Console.ReadKey(false).Key;
     if (key==ConsoleKey.LeftArrow)
         x--;
@@ -26,5 +31,21 @@ do
         y--;
     else if (key==ConsoleKey.DownArrow)
         y++;
+
+    if (x >= 0 && x < Console.BufferHeight && y >= 0 && y < Console.BufferHeight)
+    Console.SetCursorPosition(x, y); 
+   
 }
 while (key != ConsoleKey.Escape);
+Console.Clear();
+
+/*
+void TryMove (int proposedTop, int proposedLeft)
+{
+    if (proposedLeft > 0 && proposedLeft < Console.BufferHeight && proposedTop > 0 && proposedTop < Console.BufferHeight)
+    {
+        cursorLeft = proposedLeft;
+        cursorTop = proposedTop;
+    }
+}
+*/
