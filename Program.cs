@@ -5,10 +5,10 @@ using System.Data;
 
 Console.Clear();
 Console.WriteLine("Welcome to the MAZE! Use the arrows to navigate to the star at the end. Press enter to start.");
+string [] mapRows = File.ReadAllLines("map.txt");
 if (Console.ReadKey(true).Key == ConsoleKey.Enter)
 {
     Console.Clear();
-    string[] mapRows = File.ReadAllLines("map.txt");
     foreach (string row in mapRows)
     Console.WriteLine(row);
 }
@@ -38,6 +38,15 @@ do
         x = 0;
     else if (y < 0)
         y = 0;
+
+    if (mapRows[Console.CursorTop][Console.CursorLeft]=='*')
+    {
+        Console.Clear();
+        Console.WriteLine("Congrats, you got through the Maze! Press Enter to end.");
+        if (Console.ReadKey(true).Key == ConsoleKey.Enter)
+        break;
+    }
+    
 }
 while (key != ConsoleKey.Escape);
 Console.Clear();
