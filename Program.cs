@@ -2,6 +2,7 @@
 
 // Elora Smith, 3/18/25, Lab 7 Maze
 using System.Data;
+using System.Diagnostics;
 using System.Net;
 
 Console.Clear();
@@ -14,15 +15,15 @@ if (Console.ReadKey(true).Key == ConsoleKey.Enter)
     Console.WriteLine(row);
 }
 
+Stopwatch stopwatch = new Stopwatch();
+stopwatch.Start();
 ConsoleKey key;
 int x = 0;
 int y = 0;
-//int cursorLeft = 0;
-//int cursorTop = 0;
-Console.SetCursorPosition(0,0);
+Console.SetCursorPosition(x, y);
+
 do
 {
-    
     key = Console.ReadKey(false).Key;
     if (key==ConsoleKey.LeftArrow && mapRows[Console.CursorTop][Console.CursorLeft-1] != '#')
         x--;
@@ -41,12 +42,13 @@ do
 
     if (mapRows[Console.CursorTop][Console.CursorLeft]=='*')
     {
+        stopwatch.Stop();
+        int seconds = (int)stopwatch.ElapsedMilliseconds/1000;
         Console.Clear();
-        Console.WriteLine("Congrats, you got through the Maze! Press Enter to end.");
+        Console.WriteLine($"Congrats, you got through the Maze! It took you {seconds} seconds. Press Enter to end.");
         if (Console.ReadKey(true).Key == ConsoleKey.Enter)
         break;
-    }
-    
+    } 
 }
 while (key != ConsoleKey.Escape);
 Console.Clear();
