@@ -2,6 +2,7 @@
 
 // Elora Smith, 3/18/25, Lab 7 Maze
 using System.Data;
+using System.Net;
 
 Console.Clear();
 Console.WriteLine("Welcome to the MAZE! Use the arrows to navigate to the star at the end. Press enter to start.");
@@ -23,18 +24,17 @@ do
 {
     
     key = Console.ReadKey(false).Key;
-    if (key==ConsoleKey.LeftArrow)
+    if (key==ConsoleKey.LeftArrow && mapRows[Console.CursorTop][Console.CursorLeft-1] != '#')
         x--;
-    else if (key==ConsoleKey.RightArrow)
+    else if (key==ConsoleKey.RightArrow && mapRows[Console.CursorTop][Console.CursorLeft+1] != '#')
        x++;
-    else if (key==ConsoleKey.UpArrow)
+    else if (key==ConsoleKey.UpArrow && mapRows[Console.CursorTop-1][Console.CursorLeft] != '#')
         y--;
-    else if (key==ConsoleKey.DownArrow)
+    else if (key==ConsoleKey.DownArrow && mapRows[Console.CursorTop+1][Console.CursorLeft] != '#')
         y++;
 
-    if (x >= 0 && x < Console.BufferHeight && y >= 0 && y < Console.BufferHeight)
-    Console.SetCursorPosition(x, y); 
-    else if (x < 0)
+    TryMove(x, y);
+    if (x < 0)
         x = 0;
     else if (y < 0)
         y = 0;
@@ -51,13 +51,9 @@ do
 while (key != ConsoleKey.Escape);
 Console.Clear();
 
-/*
-void TryMove (int proposedTop, int proposedLeft)
+
+void TryMove (int x, int y)
 {
-    if (proposedLeft > 0 && proposedLeft < Console.BufferHeight && proposedTop > 0 && proposedTop < Console.BufferHeight)
-    {
-        cursorLeft = proposedLeft;
-        cursorTop = proposedTop;
-    }
+    if (x >= 0 && x < Console.BufferHeight && y >= 0 && y < Console.BufferHeight)
+        Console.SetCursorPosition(x, y);
 }
-*/
