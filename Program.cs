@@ -34,7 +34,10 @@ do
 
     if (x >= 0 && x < Console.BufferHeight && y >= 0 && y < Console.BufferHeight)
     Console.SetCursorPosition(x, y); 
-   
+    else if (x < 0)
+        x = 0;
+    else if (y < 0)
+        y = 0;
 }
 while (key != ConsoleKey.Escape);
 Console.Clear();
